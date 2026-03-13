@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
 import "../../styles/global.css";
+const  pageBackground = "solid"
 
 export async function getStaticPaths() {
   const allPosts = Object.values(
@@ -51,8 +52,10 @@ const tags = [
   <ul>
     {posts.map((post: any) => (
       <PostCard
-        url={post.url}
-        title={post.frontmatter.title}
+    url={post.url} 
+    title={post.frontmatter.title}
+    date={post.frontmatter.date}
+    description={post.frontmatter.description}
       />
     ))}
   </ul>

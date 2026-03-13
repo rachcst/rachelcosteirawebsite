@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Field Notes on Kimchi'
-date: 2026-03-05
-description: 'In recent weeks I went from not underatnd korean hype to being obssesed with this country, all thanks to a cooking show and food.'
+title: 'The Art of Collecting and Curating'
+date: 2026-03-10
+description: 'Since my childhood filled with Blockbuster store trips to my adulthood collecting any dvds i can get my hands on, my view of physical media'
 author: 'Rachel Costeira'
 tags: ["cooking", "gastronomy", "cultures"]
 ---
