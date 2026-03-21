@@ -1,13 +1,9 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'The Art of Collecting and Curating'
+title: 'Post 2'
 date: 2026-03-10
-description: 'Since my childhood filled with Blockbuster store trips to my adulthood collecting any dvds i can get my hands on, my view of physical media'
+description: 'My 2nd Post'
 author: 'Rachel Costeira'
-tags: ["cooking", "gastronomy", "cultures"]
+tags: ["Tag 1", "Tag 2", "Tag 3"]
 ---
-jsjncjewncwencnwkcnlewkndkwendkjewnfjcbjeb
-hucwbebwcbewucbuweb
-
-jwiejicwenhcih
-jfiweeciewicnw
+text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text

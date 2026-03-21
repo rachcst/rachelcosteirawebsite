@@ -1,13 +1,9 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Field Notes on Kimchi'
+title: 'Post 1'
 date: 2026-03-05
-description: 'In recent weeks I went from not underatnd korean hype to being obssesed with this country, all thanks to a cooking show and food.'
+description: ' My 1st post'
 author: 'Rachel Costeira'
-tags: ["cooking", "gastronomy", "cultures"]
+tags: ["Tag 1", "Tag 2", "Tag 3"]
 ---
-jsjncjewncwencnwkcnlewkndkwendkjewnfjcbjeb
-hucwbebwcbewucbuweb
-
-jwiejicwenhcih
-jfiweeciewicnw
+text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text

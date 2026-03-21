@@ -1,13 +1,9 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Sewage Lips'
+title: 'Post 3'
 date: 2026-03-05
-description: 'Testemony of a Christian with swearing issues'
+description: 'My 3rd post'
 author: 'Rachel Costeira'
-tags: ["Christianity", "lifestyle", "cultures"]
+tags: ["Tag 1", "Tag 2", "Tag 3"]
 ---
-jsjncjewncwencnwkcnlewkndkwendkjewnfjcbjeb
-hucwbebwcbewucbuweb
-
-jwiejicwenhcih
-jfiweeciewicnw
+text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
