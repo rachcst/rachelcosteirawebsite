@@ -1,14 +1,12 @@
 ---
-import CloseIcon from "./CloseIcon.astro"
+import CloseIcon from "./CloseIcon.astro";
+import NavLinks from "./NavLinks.astro"
 ---
 <nav class="sidebar">
-  <a class="nav-link"  href="/">Home</a>
-  <a class="nav-link" href="/about">About</a>
-  <a class="nav-link" href="/blog">Archive</a>
+  <NavLinks />
   <CloseIcon />
 </nav>
-<nav class="headernav">
-  <a class="nav-link"  href="/">Home</a>
-  <a class="nav-link" href="/about">About</a>
-  <a class="nav-link" href="/blog">Archive</a>
+<nav class="headerNav">
+  <NavLinks />
 </nav>
+

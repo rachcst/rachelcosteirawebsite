@@ -6,7 +6,3 @@ export function formatDate(date) {
 })
 }
 
-export function formatTags(tags = []) {
-  return tags.map(tag => `${tag} `);
-}
-

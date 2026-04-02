@@ -1,17 +1,23 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PostCard from "../components/PostCard.astro";
+import StatusBox from "../components/StatusBox.astro";
 import "../styles/global.css";
+
+
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
-const pageTitle = "Home";
+const pageTitle = "Rachel's Archive";
 const  pageBackground = "solid"
 ---
 
 <BaseLayout pageBackground={pageBackground} pageTitle={pageTitle}>
-    <p>Hi, I'm Rachel. Welcome to my corner of the internet.</p>    
-    <p>I'm a culinary student, interested in writing, photography, art, and a handful of other things. </p>
+    
+    
+    
+    <p>hello and welcome to my personal blog! I'm Rachel</p>   
 
-    <h1>Recent posts:</h1>
+    <StatusBox />
+
     {allPosts.map((post: any) => <PostCard 
     url={post.url} 
     title={post.frontmatter.title}

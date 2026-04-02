@@ -1,7 +1,10 @@
 ---
 const { title, url, date, description, tags } = Astro.props
-import { formatDate, formatTags } from  "../js/utils.js"
+import { formatDate } from  "../js/utils.js"
 
+export function formatTags(tags = []) {
+  return tags.map(tag => `${tag} `);
+}
 ---
 <li class="postcard">
   

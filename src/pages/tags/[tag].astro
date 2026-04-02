@@ -28,7 +28,6 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 
-// Get all tags for the tag list UI
 const allPosts = Object.values(
   import.meta.glob('../posts/*.md', { eager: true })
 );
