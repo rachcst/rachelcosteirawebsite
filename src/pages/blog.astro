@@ -5,18 +5,14 @@ import "../styles/global.css";
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 const tags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())];
 const pageTitle = "Blog";
-const  pageBackground = "solid"
+const  pageBackground = "stripes"
 ---
 
 <BaseLayout pageBackground={pageBackground} pageTitle={pageTitle}>
 
 
 
-  <div class="tags">
-    {tags.map((tag) => (
-      <a id="tag" href={`/tags/${tag}`}>{tag}</a>
-    ))}
-  </div>
+  
 
     {allPosts.map((post: any) => <PostCard 
     url={post.url} 

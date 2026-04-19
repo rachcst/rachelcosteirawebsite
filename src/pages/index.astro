@@ -6,14 +6,13 @@ import "../styles/global.css";
 import { websiteData } from "../data/data.ts"
 
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
-const  pageBackground = "gingham"
+const pageBackground = "gingham"
 ---
 
 <BaseLayout pageBackground={pageBackground} pageTitle={websiteData.websiteName}>
     
-
-    
-    <p>hello and welcome to my personal blog! I'm Rachel</p>   
+    <h2>Welcome to Rachel's Archive!</h2>
+    <p>This is were I catalog my projects, art, recipes, etc. I hope you enjoy your stay!</p>
 
 
     {allPosts.map((post: any) => <PostCard 

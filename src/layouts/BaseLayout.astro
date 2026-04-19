@@ -1,8 +1,9 @@
 ---
 import Navigation from "../components/Navigation.astro"
 import StatusBox from "../components/StatusBox.astro";
-import Buttons from "../components/Buttons.astro"
+import Tags from "../components/Tags.astro"
 import "../styles/global.css"
+
 const { pageTitle } = Astro.props;
 const { pageBackground } = Astro.props;
 ---
@@ -19,18 +20,19 @@ const { pageBackground } = Astro.props;
 	<body class={pageBackground}>
         <div class="bodyWrapper">
 			<header>
-				<div>
+				<div class="titleContainer">
 					<span class="title">Rachel's Archive</span>
 				</div>
-				<Buttons />
+				
 				
 			</header>
 			<div class="mainWrapper">
 				<aside>
 					<div class="aboutMeSummary">
-						<span>Hello! I'm the webmistress, writer of this website!</span>
+						<span>Hello! I'm Rachel. I'm 21 years old, Christian, culinary student and hopefully future chef</span>
 					</div>
 					<Navigation />
+					<Tags />
 					<StatusBox />
 					
 				</aside>
@@ -41,7 +43,6 @@ const { pageBackground } = Astro.props;
 			<footer>
 				<span>Made by Rachel Costeira, using Astro.js</span>
 			</footer>
-			<img class="girl" src="https://graphic.neocities.org/55887f50-0fc5-4ae4-a43f-cc0b0c00eff6.gif" alt="">
 		</div>
 	</body>
 	<script src="../js/sidebar.js"></script>

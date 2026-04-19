@@ -3,51 +3,106 @@
 
 :root{
     --NeutralDark: #ffffff;
+    --LightNeutral99: #ffffff99;
     --NeutralLight: #000000;
-    --Green: rgb(153, 209, 63)yellow;
-
+    --GreenDark: #36500e;
+    --GreenMedium: #80b130;
+    --GreenLight: #d5f1a6;
+    --GreenLight99: #d5f1a699;
+    --PinkDark: #8d2562;
+    --PinkMedium: #ec78bc;
+    --PinkLight: #eeb6d7;
+    --PinkMedium99: #ec78bc99;
+    
     --IMFellEnglish: "IM Fell English", serif;
     --Bonbon: "Bonbon", cursive;
     --MountainsOfChristmas: "Mountains of Christmas", serif;
     --PrincessSofia: "Princess Sofia", cursive;
+
+    --Border: .25rem var(--PinkMedium) solid;
+
 }
 
 *{
     padding: 0;
     margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    list-style-position: inside;
 }
 
 /* BACKGROUND PATTERN */
-.solid{
-    background-color: greenyellow;
+
+
+.gingham {
+background-image: 
+  linear-gradient(
+    0deg,
+    var(--PinkMedium99) 0% 10%,
+    var(--LightNeutral99) 10% 30%,
+    var(--GreenLight99) 30% 50%,
+    var(--GreenLight99) 50% 70%,
+    var(--LightNeutral99) 70% 90%,
+    var(--PinkMedium99) 90% 100%
+  ),
+  linear-gradient(
+    90deg,
+    var(--PinkMedium99) 0% 10%,
+    var(--LightNeutral99) 10% 30%,
+    var(--GreenLight99) 30% 50%,
+    var(--GreenLight99) 50% 70%,
+    var(--LightNeutral99) 70% 90%,
+    var(--PinkMedium99) 90% 100%
+  );
+background-size: 100px 100px, 100px 100px;
 }
 
+.polkadots{
+      background-image: 
+    radial-gradient(var(--PinkMedium) 20%, transparent 20%),
+    radial-gradient(var(--PinkMedium) 20%, transparent 20%);
+  background-position: 0px 0px, 60px 60px;
+  background-size: 120px 120px;
+  background-color: var(--GreenLight);
+}
 
 
 
 body{
     width: 100vw;
     height: 100vh;
-    background-image: url(https://ishimori.crd.co/assets/images/gallery10/c5f70cb5.png?v=4d7345d1);
+    margin-top: 3rem;
+    
 }
 .bodyWrapper{
-    border: 3px black;
+    
+    border:var(--Border);
+    border-radius: 3rem;
         width: 50vw;
         height: 100vh;
     margin: 0 auto;
-    background-color: var(--Green);
+    background-color: var(--GreenLight);
 }
 header{
-    height: 10rem;
-    background-color: pink;
+    height: 20vh;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    border-bottom: var(--Border);
+}
+.titleContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
 }
 
-header .title{
+.titleContainer .title{
     font-family: var(--MountainsOfChristmas);
-    font-size: 3rem;
+    font-size: 3.5rem;
+    color: var(--PinkMedium);
+    font-weight: 500;
+
 }
 
 nav .navLinks{
@@ -61,12 +116,17 @@ nav .navLinks{
     flex-direction: row;
 }
 aside{
-    border-right:  5px solid var(--red);
-    background-color:aquamarine;
+    border-right: var(--Border);
+    width: 20vw;
+}
+
+main{
+    width: 30vw;
 }
 
 aside .aboutMeSummary,
 aside .statusBox,
+aside .tagsContainer,
 aside nav{
     margin: .5rem;
     padding: .5rem;
@@ -74,11 +134,19 @@ aside nav{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px black solid;
+   
 }
 
 h3{
-    border: 1px black solid;
+    padding: .5rem ;
+    border-radius: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--PinkLight);
+    font-family: var(--MountainsOfChristmas);
+    border: .1rem var(--PinkMedium) solid;
 }
 
 .statusBox ul{
@@ -96,9 +164,19 @@ nav .navLinks{
     align-items: start;
     width: 100%;
 }
+.tagsContainer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+
+
 
 footer{
-    border-top: 5px solid var(--red);
+    border-top: var(--Border);
 }
 
 .girl{
