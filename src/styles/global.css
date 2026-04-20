@@ -67,10 +67,8 @@ body{
     width: 100vw;
     height: 100vh;
     margin-top: 3rem;
-    
 }
 .bodyWrapper{
-    
     border:var(--Border);
     border-radius: 3rem;
     width: 50vw;
