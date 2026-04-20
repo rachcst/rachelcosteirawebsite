@@ -13,19 +13,28 @@
     --PinkLight: #eeb6d7;
     --PinkMedium99: #ec78bc99;
     
+    /*---------------- FONTS ----------------*/
+    --ExtraLargeFont:2.2rem;
+    --LargeFont: 1.9rem;
+    --MediumFont:1.6rem;
+    --SmallFont:1.3rem;
+    --ExtraSmallFont:1rem;
+
+
     --IMFellEnglish: "IM Fell English", serif;
     --Bonbon: "Bonbon", cursive;
     --MountainsOfChristmas: "Mountains of Christmas", serif;
     --PrincessSofia: "Princess Sofia", cursive;
 
-    --Border: .25rem var(--PinkMedium) solid;
+
+
+
 }
 
 *{
     padding: 0;
     margin: 0;
-    font-family:'Courier New', Courier, monospace;
-    list-style-position: inside;
+
 }
 
 /* BACKGROUND PATTERN */
@@ -60,28 +69,58 @@ background-size: 100px 100px, 100px 100px;
     background-size: 120px 120px;
     background-color: var(--GreenLight);
 }
-
-
-
+/* PRESETS */
+h1{
+    font-size: var(--ExtraLargeFont);
+    font-family: var(--MountainsOfChristmas);
+}
+h2{
+    font-size: var(--LargeFont);
+    font-family: var(--MountainsOfChristmas);
+}
+h3{
+    font-size: var(--MediumFont);
+    font-family: var(--MountainsOfChristmas);
+}
+p{
+    font-size: var(--ExtraSmallFont);
+    font-family:'Times New Roman', Times, serif;
+}
+a{
+ font-size: var(--ExtraSmallFont);
+ font-family: 'Times New Roman', Times, serif;
+}
+/* -------------------*/
 body{
     width: 100vw;
     height: 100vh;
-    margin-top: 3rem;
 }
-.bodyWrapper{
-    border:var(--Border);
-    border-radius: 3rem;
-    width: 50vw;
-    height: 100vh;
-    margin: 0 auto;
+.wrapper{
+    margin: 3vh 15vw ;
+    width: 70vw;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 3px;
+    background-color: var(--PinkMedium);
+    padding: 5px;
+}
+.wrapper header,
+.wrapper aside,
+.wrapper main,
+.wrapper footer{
     background-color: var(--GreenLight);
 }
-header{
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    border-bottom: var(--Border);
+
+/* --------------- HEADER --------------- */
+.wrapper header {
+  grid-area: header;
+  height: 20vh;
 }
+
 .titleContainer{
     width: 100%;
     height: 100%;
@@ -99,30 +138,43 @@ header{
 
 }
 
+/* --------------- ASIDE --------------- */
+.wrapper aside {
+  grid-area: aside;
+}
+/* --------------- MAIN --------------- */
+.wrapper main {
+  grid-area: main;
+}
+/* --------------- FOOTER --------------- */
+.wrapper footer {
+  grid-area: footer;
+  text-align: center;  
+}
+
+
+
 nav .navLinks{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
-.mainWrapper{
-    display: flex;
-    flex-direction: row;
-}
+
 aside{
-    border-right: var(--Border);
-    width: 20vw;
+
+    padding: .5rem;
 }
 
 main{
-    width: 30vw;
+
+        padding: .5rem;
 }
 
 aside .aboutMeSummary,
 aside .statusBox,
 aside .tagsContainer,
 aside nav{
-    margin: .5rem;
     padding: .5rem;
     display: flex;
     align-items: center;
@@ -131,24 +183,13 @@ aside nav{
    
 }
 
-h3{
-    padding: .5rem ;
-    border-radius: 3rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--PinkLight);
-    font-family: var(--MountainsOfChristmas);
-    border: .1rem var(--PinkMedium) solid;
-}
-
 .statusBox ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     width: 100%;
+    list-style: none;
 }
 
 nav .navLinks{
@@ -157,6 +198,7 @@ nav .navLinks{
     justify-content: center;
     align-items: start;
     width: 100%;
+    list-style: none;
 }
 .tagsContainer ul{
     display: flex;
@@ -164,18 +206,7 @@ nav .navLinks{
     justify-content: center;
     align-items: start;
     width: 100%;
+    list-style: none;
 }
 
 
-
-
-footer{
-    border-top: var(--Border);
-}
-
-.girl{
-    position: fixed;
-    height: 12rem;
-    left: 0;
-    bottom: 0;
-}

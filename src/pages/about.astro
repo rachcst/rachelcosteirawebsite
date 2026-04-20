@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
-const  pageBackground = "solid"
-const pageTitle = "About Me"
 import { websiteText } from "../data/data.ts"
+const pageBackground = "gingham"
+const pageTitle = "About Me"
 ---
-<BaseLayout class={pageBackground} pageTitle={pageTitle}>
+<BaseLayout pageBackground={pageBackground} pageTitle={pageTitle}>
     <h3>{ websiteText.aboutMe }</h3>
 </BaseLayout>

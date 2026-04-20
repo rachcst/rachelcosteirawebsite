@@ -1,10 +1,8 @@
 ---
-import Navigation from '../components/Navigation.astro';
-import Utils from '../components/Utils.astro';
-import Title from "../components/Title.astro"
+import { websiteData } from "../data/data";
 ---
 <header>
-  <Title />
-  <Navigation />
-  <Utils />
+	<div class="titleContainer">
+		    <a class="title" href="/">{ websiteData.websiteName }</a>
+	</div>
 </header>

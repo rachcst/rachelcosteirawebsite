@@ -35,10 +35,6 @@ export const navLinks = [
       name: "Blog", 
       url: "/blog" 
     },
-        { 
-      name: "Cooking Notes", 
-      url: "/cookingnotes" 
-    },
     { 
       name: "Web Recs", 
       url: "/webrecs" 

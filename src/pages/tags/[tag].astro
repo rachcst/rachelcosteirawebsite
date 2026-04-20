@@ -35,15 +35,11 @@ const allPosts = Object.values(
 const tags = [
   ...new Set(allPosts.flatMap((post: any) => post.frontmatter.tags || [])),
 ];
+const pageBackground = "gingham"
 ---
 
-<BaseLayout pageTitle={tag}>
-  <div class="tags">
-    {tags.map((t) => (
-        <a id="tag" href={`/tags/${t}`}>{t}</a>
-    ))}
-  </div>
-
+<BaseLayout pageTitle={tag} pageBackground={pageBackground}>
+  <h3>All the posts about {tag}</h3>
   <ul class="content">
     {posts.map((post: any) => (
       <PostCard
