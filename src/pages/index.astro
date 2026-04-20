@@ -1,19 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PostCard from "../components/PostCard.astro";
-
 import "../styles/global.css";
 import { websiteData } from "../data/data.ts"
-
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 const pageBackground = "gingham"
 ---
-
 <BaseLayout pageBackground={pageBackground} pageTitle={websiteData.websiteName}>
-    
     <h2>Welcome to Rachel's Archive!</h2>
     <p>This is were I catalog my projects, art, recipes, etc. I hope you enjoy your stay!</p>
-
 
     {allPosts.map((post: any) => <PostCard 
     url={post.url} 

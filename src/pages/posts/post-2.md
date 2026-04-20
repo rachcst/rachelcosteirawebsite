@@ -1,9 +1,8 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "1 year of cooking"
+title: "Post 2"
 date: 2026-03-05
-description: "I "
+description: "Post 2 Description"
 author: 'Rachel Costeira'
-categories: "Blog"
-tags: ["Programming", "Astro", "Blogging"]
+tags: ["Tag 1", "Tag 2", "Tag 4"]
 ---

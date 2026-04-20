@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bonbon&family=IM+Fell+English:ital@0;1&family=Mountains+of+Christmas:wght@400;700&family=Princess+Sofia&display=swap');
 
-
 :root{
     --NeutralDark: #ffffff;
     --LightNeutral99: #ffffff99;
@@ -20,7 +19,6 @@
     --PrincessSofia: "Princess Sofia", cursive;
 
     --Border: .25rem var(--PinkMedium) solid;
-
 }
 
 *{
@@ -31,8 +29,6 @@
 }
 
 /* BACKGROUND PATTERN */
-
-
 .gingham {
 background-image: 
   linear-gradient(
@@ -57,12 +53,12 @@ background-size: 100px 100px, 100px 100px;
 }
 
 .polkadots{
-      background-image: 
-    radial-gradient(var(--PinkMedium) 20%, transparent 20%),
-    radial-gradient(var(--PinkMedium) 20%, transparent 20%);
-  background-position: 0px 0px, 60px 60px;
-  background-size: 120px 120px;
-  background-color: var(--GreenLight);
+    background-image: 
+        radial-gradient(var(--PinkMedium) 20%, transparent 20%),
+        radial-gradient(var(--PinkMedium) 20%, transparent 20%);
+    background-position: 0px 0px, 60px 60px;
+    background-size: 120px 120px;
+    background-color: var(--GreenLight);
 }
 
 
@@ -77,8 +73,8 @@ body{
     
     border:var(--Border);
     border-radius: 3rem;
-        width: 50vw;
-        height: 100vh;
+    width: 50vw;
+    height: 100vh;
     margin: 0 auto;
     background-color: var(--GreenLight);
 }
