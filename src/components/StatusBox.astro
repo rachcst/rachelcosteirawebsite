@@ -1,9 +1,9 @@
 ---
 import { statusData } from "../data/data.ts"
 ---
-<div class="statusBox">
-  <h3 id="statusH3">Currently</h3>
-  <ul >
+<div class="asideContainer statusBoxContainer">
+  <h3 class="asideHeader statusHeader">Currently</h3>
+  <ul class="statusBox">
     {statusData.map((site) => (
       <li><p>{site.name}: {site.status}</p></li>
     ))}

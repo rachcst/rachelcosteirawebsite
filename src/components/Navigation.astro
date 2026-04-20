@@ -1,16 +1,15 @@
 ---
 import { navLinks } from "../data/data.ts"
 ---
-<nav>
-  <h3 id="navH3">Navigation</h3>
-  <ul class="navLinks">
-    {navLinks.map((site) => (
-      <li class="navLink">
-        <a href={site.url} >
-          {site.name}
-        </a>
-      </li>
-    ))}
-</ul>
-</nav>
-
+<div class="asideContainer navContainer">
+    <h3 class="asideHeader navHeader">Navigation</h3>
+    <ul class="navLinks">
+      {navLinks.map((site) => (
+        <li class="navLink">
+          <a id="navLink" href={site.url} >
+            {site.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+</div>

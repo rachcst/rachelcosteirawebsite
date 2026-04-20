@@ -3,8 +3,8 @@ const allPosts = Object.values(import.meta.glob('../pages/posts/*.md', { eager: 
 const tags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())];
 ---
 
-<div class="tagsContainer">
-    <h3 id="tagsH3">Tags</h3>
+<div class="asideContainer tagsContainer">
+    <h3 class="asideHeader tagsHeader">Tags</h3>
     <ul class="tags">
         {tags.map((tag) => (
             <li class="tag">
