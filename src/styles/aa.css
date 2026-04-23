@@ -152,24 +152,6 @@ header{
 
 
 
-/*---------------- THEME TOGGLE ----------------*/
-
-.themeToggle {
-    padding: .3rem;
-    font-size: var(--ExtraSmallFont);
-    border: 2px var(--DarkNeutral) solid;
-    border-radius: 1.5rem;
-    background: none;
-}
-.fa-sun { 
-    color: var(--DarkNeutral); }
-.fa-moon { 
-    color: transparent; 
-}
-
-.dark .fa-sun { color: transparent; }
-.dark .fa-moon { color: var(--LightNeutral); }
-
 
 
 
@@ -184,96 +166,8 @@ main{
 
 
 
-/*---------------- SIDEBAR ----------------*/
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: var(--LightNeutral);
-    height: 100vh;
-    width: 100vw;
-    z-index: 999;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
-.sidebar .navLinks{
-    height: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-        list-style: none;
-}
 
-.sidebar .navLink a{
-    text-decoration: none;
-    font-size: var(--MediumFont);
-
-}
-
-.dark .sidebar{
-    background-color: var(--DarkNeutral);
-}
-.dark .nav-link{
-    color: var(--   --LightNeutral);
-}
-
-/*---------------- BURGER TOGGLE ----------------*/
-.burgerIcon{
-    color: var(--DarkNeutral);
-    padding: .3rem;
-    font-size: 2rem;
-    border:none;
-    border-radius: 1.5rem;
-    background: none;
-    display: none;
-}
-
-.dark .fa-bars{
-    color: var(--LightNeutral);
-}
-
-.closeIcon{
-    color: var(--DarkNeutral);
-    padding: .3rem;
-    font-size: 3rem;
-    border: none;
-    background: none;
-}
-
-.dark .fa-xmark{
-    color: var(--LightNeutral);
-}
-
-/*---------------- DARK MODE ----------------*/ 
-.dark .menu {
-  color: var(--LightNeutral);
-}
-.dark body {
-  background-color: var(--DarkNeutral);
-  color: var(--LightNeutral);
-}
-.dark .themeToggle {
-    border: 2px var(--LightNeutral) solid;
-}
-.dark h1,
-.dark h2,
-.dark h3,
-.dark p,
-.dark a{
-    color: var(--LightNeutral);
-}
-
-.dark header{
-    border-bottom: var(--LightNeutral) 2px solid;
-}
-
-.dark .postcard{
-    border: var(--LightNeutral) 2px solid;
-}
 
 /* TAGS */
 .tags{

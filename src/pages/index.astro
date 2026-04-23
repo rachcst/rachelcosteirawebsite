@@ -11,11 +11,14 @@ const pageBackground = "gingham"
     <p>This is were I catalog my projects, art, recipes, etc. I hope you enjoy your stay!</p>
 
     
-    {allPosts.map((post: any) => <PostCard 
-    url={post.url} 
-    title={post.frontmatter.title}
-    date={post.frontmatter.date}
-    description={post.frontmatter.description}
-    tags={post.frontmatter.tags}
-    />)}
+    <div class="recentPosts">
+        <h3>Recent posts:</h3>
+            {allPosts.map((post: any) => <PostCard 
+                url={post.url} 
+                title={post.frontmatter.title}
+                date={post.frontmatter.date}
+                description={post.frontmatter.description}
+                tags={post.frontmatter.tags}
+            />)}
+    </div>
 </BaseLayout>

@@ -5,16 +5,16 @@
     --LightNeutral99: #ffffff99;
     --DarkNeutral: #000000;
 
-    --PrimaryDark: #36500e;
-    --PrimaryMedium: #80b130;
-    --PrimaryLight: #d5f1a6;
-    --PrimaryLight99: #d5f1a699;
+    --PrimaryDark: #882430;
+    --PrimaryMedium: #ed7888;
+    --PrimaryLight: #fdcbd2;
+    --PrimaryDark99: #88243099;
+    --PrimaryMedium99: #ed788899;
+    --PrimaryLight99: #fdcbd299;
 
-    --SecundaryDark: #8d2562;
-    --SecundaryMedium: #ec78bc;
-    --SecundaryLight: #eeb6d7;
-    --SecundaryMedium99: #ec78bc99;
-    
+    --Accent1:#919456;
+    --Accent2: #FF8000;
+    --Accent3: #D189C2;
     /*---------------- FONTS ----------------*/
     --ExtraLargeFont:2.5rem;
     --LargeFont: 2.2rem;
@@ -22,66 +22,50 @@
     --SmallFont:1.5rem;
     --ExtraSmallFont:1.2rem;
 
-
     --IMFellEnglish: "IM Fell English", serif;
     --Bonbon: "Bonbon", cursive;
     --MountainsOfChristmas: "Mountains of Christmas", serif;
     --PrincessSofia: "Princess Sofia", cursive;
 
-    --Border: 0.15rem var(--SecundaryMedium) solid;
-
-
+    --Border: 0.15rem var(--PrimaryMedium) solid;
 }
-
 *{
     padding: 0;
     margin: 0;
-
 }
-
 /* BACKGROUND PATTERN */
 .gingham {
   background-image: 
     linear-gradient(
       0deg,
-      var(--SecundaryMedium99) 0% 10%,
+      var(--PrimaryMedium99) 0% 10%,
       var(--LightNeutral99) 10% 30%,
       var(--PrimaryLight99) 30% 50%,
       var(--PrimaryLight99) 50% 70%,
       var(--LightNeutral99) 70% 90%,
-      var(--SecundaryMedium99) 90% 100%
+      var(--PrimaryMedium99) 90% 100%
     ),
     linear-gradient(
       90deg,
-      var(--SecundaryMedium99) 0% 10%,
+      var(--PrimaryMedium99) 0% 10%,
       var(--LightNeutral99) 10% 30%,
       var(--PrimaryLight99) 30% 50%,
       var(--PrimaryLight99) 50% 70%,
       var(--LightNeutral99) 70% 90%,
-      var(--SecundaryMedium99) 90% 100%
+      var(--PrimaryMedium99) 90% 100%
     );
   background-size: 100px 100px, 100px 100px;
 }
-
 .polkadots {
   background-image: 
-    radial-gradient(var(--SecundaryMedium) 20%, transparent 20%),
-    radial-gradient(var(--SecundaryMedium) 20%, transparent 20%);
+    radial-gradient(var(--PrimaryDark) 20%, transparent 20%),
+    radial-gradient(var(--PrimaryDark) 20%, transparent 20%);
   background-position: 0px 0px, 60px 60px;
   background-size: 120px 120px;
-  background-color: var(--PrimaryLight);
+  background-color: rgb(255, 255, 218);
 }
-.stripes{
-    background-image: linear-gradient(90deg, 
-        var(--PrimaryLight) 25%, 
-        var(--SecundaryMedium) 25%, 
-        var(--SecundaryMedium) 50%, 
-        var(--PrimaryLight) 50%, 
-        var(--PrimaryLight) 75%, 
-        var(--SecundaryMedium) 75%, 
-        var(--SecundaryMedium) 100%);
-    background-size: 80.00px 80.00px;
-}
+
+
 /* PRESETS */
 h1{
     font-size: var(--ExtraLargeFont);
@@ -119,9 +103,12 @@ body{
         "footer footer";
     grid-template-columns: 1fr 3fr;
     gap: .5rem;
-    background-color: var(--LightNeutral);
     padding: .5rem;
     border: var(--Border);
+    background: linear-gradient(180deg,
+    var(--PrimaryMedium) 0%, 
+    var(--PrimaryLight) 100%
+    );
 }
 .wrapper header,
 .wrapper aside,
@@ -130,50 +117,56 @@ body{
     background-color: var(--LightNeutral);
     border-radius: 0.5rem;
 }
-
 /* --------------- HEADER --------------- */
 .wrapper header {
   grid-area: header;
   height: 10vh;
   border: var(--Border);
-
-
 }
-
 .title{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-
 .title a{
     font-family: var(--MountainsOfChristmas);
     font-size: 3.5rem;
-    color: var(--SecundaryMedium);
+    color: var(--PrimaryMedium);
     font-weight: 500;
     text-decoration: none;
 }
-
-
-
 /* --------------- ASIDE --------------- */
 .wrapper aside {
   grid-area: aside;
+  background: linear-gradient(180deg,
+    var(--PrimaryMedium) 0%, 
+    var(--PrimaryLight) 100%
+    );
+    display: flex;
+    flex-direction: column;
 }
 
 .asideHeader{
     padding: 0.5rem;
-    
+    color: var(--PrimaryMedium);
+    border-bottom: var(--Border);
 }
-
 .asideContainer{
     border-radius: 0.5rem;
     margin-bottom: 0.5rem;
+    border: var(--Border);
+    background-color: var(--LightNeutral);
 }
-
+.asideBody{
+    color: var(--PrimaryMedium);
+}
+.asideContainer #tag,
+.asideContainer #navLink{
+    color: var(--PrimaryMedium);
+    text-decoration: none;
+}
 .statusBox,
 .tags,
 .navLinks{
@@ -181,59 +174,154 @@ body{
     padding: 0.5rem;
 }
 
-.statusBoxContainer{
-    color: orange;
-    border: .15rem orange solid;
-}
-.statusHeader{
-    border-bottom: 0.15rem orange solid;
-}
-
-.tagsContainer{
-    color: yellowgreen;
-    border: .15rem yellowgreen solid;
-}
-.tagsContainer #tag{
-    color: yellowgreen;
-}
-.tagsHeader{
-    border-bottom: 0.15rem yellowgreen solid;
-}
-
-.navContainer{
-    color: lightblue;
-    border: .15rem lightblue solid;
-}
-.navHeader{
-    border-bottom: 0.15rem lightblue solid;
-}
-.navContainer #navLink{
-    color: lightblue;
-}
-
 /* --------------- MAIN --------------- */
 .wrapper main {
   grid-area: main;
   padding: .5rem;
   border: var(--Border);
-
 }
 /* --------------- FOOTER --------------- */
 .wrapper footer {
     display: flex;
     justify-content: center;
     align-items: center;
-  grid-area: footer;
-  text-align: center;  
+    grid-area: footer;
+    text-align: center;  
     border-bottom-left-radius: .5rem;
-  border-bottom-right-radius: .5rem;
-  height: 3vh;
-  border: var(--Border);
+    border-bottom-right-radius: .5rem;
+    height: 3vh;
+    border: var(--Border);
 }
-
 .postcard{
     padding: 0.5rem;
 }
 .postcard a{
     text-decoration: none;
+}
+.recentPosts{
+    border: var(--Border);
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+
+
+/*---------------- THEME TOGGLE ----------------*/
+
+.themeToggle {
+    padding: .3rem;
+    font-size: var(--ExtraSmallFont);
+    border: 2px var(--DarkNeutral) solid;
+    border-radius: 1.5rem;
+    background: none;
+}
+.fa-sun { 
+    color: var(--DarkNeutral); }
+.fa-moon { 
+    color: transparent; 
+}
+
+.dark .fa-sun { color: transparent; }
+.dark .fa-moon { color: var(--LightNeutral); }
+
+.burgerIcon{
+    display: none;
+}
+
+
+/*---------------- SIDEBAR ----------------*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--LightNeutral);
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/*---------------- BURGER TOGGLE ----------------*/
+.burgerIcon{
+   position: fixed;
+   right: 0;
+   top: 0;
+   padding: .3rem;
+    font-size: var(--ExtraSmallFont);
+    border: 2px var(--DarkNeutral) solid;
+    border-radius: 1.5rem;
+    background: none;
+
+}
+
+.dark .fa-bars{
+    color: var(--LightNeutral);
+}
+
+.closeIcon{
+    position: fixed;
+   right: 0;
+   top: 0;
+   padding: .3rem;
+    font-size: var(--ExtraSmallFont);
+    border: 2px var(--DarkNeutral) solid;
+    border-radius: 1.5rem;
+    background: none;
+    
+}
+
+.dark .fa-xmark{
+    color: var(--LightNeutral);
+}
+
+/*---------------- DARK MODE ----------------*/ 
+.dark .menu {
+  color: var(--LightNeutral);
+}
+.dark body {
+  background-color: var(--DarkNeutral);
+  color: var(--LightNeutral);
+}
+.dark .themeToggle {
+    border: 2px var(--LightNeutral) solid;
+}
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p,
+.dark a{
+    color: var(--LightNeutral);
+}
+
+.dark header{
+    border-bottom: var(--LightNeutral) 2px solid;
+}
+
+.dark .postcard{
+    border: var(--LightNeutral) 2px solid;
+}
+
+@media (max-width: 600px){
+.wrapper{
+
+    display: flex;
+    flex-direction: column;
+}
+.wrapper aside{
+    display: none;
+}
+
+.sidebar .sidebarContent{
+    height: 90vh;
+    width: 90vw;
+}
+
+.burgerIcon{
+    display: flex;
+}
+
 }
