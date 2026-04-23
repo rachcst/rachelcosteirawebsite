@@ -204,16 +204,19 @@ body{
     padding: .5rem;
 }
 
-
+/* Utils */
+.utils{
+    background-color: var(--PrimaryMedium);
+    height: 2.5vh;
+    display: flex;
+    flex-direction:row;
+    padding: 0.2rem;
+}
 
 /*---------------- THEME TOGGLE ----------------*/
 
 .themeToggle {
-    padding: .3rem;
-    font-size: var(--ExtraSmallFont);
-    border: 2px var(--DarkNeutral) solid;
-    border-radius: 1.5rem;
-    background: none;
+    
 }
 .fa-sun { 
     color: var(--DarkNeutral); }
@@ -224,8 +227,24 @@ body{
 .dark .fa-sun { color: transparent; }
 .dark .fa-moon { color: var(--LightNeutral); }
 
+
+/*---------------- BURGER TOGGLE ----------------*/
 .burgerIcon{
-    display: none;
+   
+
+}
+
+.dark .fa-bars{
+    color: var(--LightNeutral);
+}
+
+.closeIcon{
+    
+    
+}
+
+.dark .fa-xmark{
+    color: var(--LightNeutral);
 }
 
 
@@ -245,38 +264,7 @@ body{
 }
 
 
-/*---------------- BURGER TOGGLE ----------------*/
-.burgerIcon{
-   position: fixed;
-   right: 0;
-   top: 0;
-   padding: .3rem;
-    font-size: var(--ExtraSmallFont);
-    border: 2px var(--DarkNeutral) solid;
-    border-radius: 1.5rem;
-    background: none;
 
-}
-
-.dark .fa-bars{
-    color: var(--LightNeutral);
-}
-
-.closeIcon{
-    position: fixed;
-   right: 0;
-   top: 0;
-   padding: .3rem;
-    font-size: var(--ExtraSmallFont);
-    border: 2px var(--DarkNeutral) solid;
-    border-radius: 1.5rem;
-    background: none;
-    
-}
-
-.dark .fa-xmark{
-    color: var(--LightNeutral);
-}
 
 /*---------------- DARK MODE ----------------*/ 
 .dark .menu {
